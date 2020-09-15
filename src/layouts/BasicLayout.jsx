@@ -12,6 +12,7 @@ import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { getAuthorityFromRouter } from '@/utils/utils';
 import logo from '../assets/logo.svg';
+
 const noMatch = (
   <Result
     status={403}
@@ -39,7 +40,7 @@ const menuDataRender = (menuList) =>
 
 const defaultFooterDom = (
   <DefaultFooter
-    copyright={`${new Date().getFullYear()} 蚂蚁金服体验技术部出品`}
+    copyright={`${new Date().getFullYear()} Sadra financial Groupe`}
     links={[
       {
         key: 'Ant Design Pro',
@@ -141,6 +142,7 @@ const BasicLayout = (props) => {
           {children}
         </Authorized>
       </ProLayout>
+
       <SettingDrawer
         settings={settings}
         onSettingChange={(config) =>

@@ -10,7 +10,7 @@ const proSettings = {
   menu: {
     locale: true,
   },
-  title: 'Ant Design Pro',
+  title: 'تحلیلگر صدرا',
   pwa: false,
   iconfontUrl: '',
 };

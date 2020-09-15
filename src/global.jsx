@@ -2,6 +2,8 @@ import { Button, message, notification } from 'antd';
 import React from 'react';
 import { useIntl } from 'umi';
 import defaultSettings from '../config/defaultSettings';
+import './assets/font/font-face.css';
+
 const { pwa } = defaultSettings; // if pwa is true
 
 if (pwa) {
