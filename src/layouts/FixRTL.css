@@ -4,6 +4,13 @@
 }
 .ant-pro-top-nav-header-logo{
     padding-right: 1rem;
+    }
+
+.ant-layout-header{
+    height:70px
+}
+.ant-pro-top-nav-header-logo > img{
+    padding-right: 5px;
 }
 /* @media only screen and (max-device-width: 540px) {
     .ant-layout-header{
