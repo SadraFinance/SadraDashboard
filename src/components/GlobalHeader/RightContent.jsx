@@ -1,7 +1,6 @@
 import { Tag } from 'antd';
 import React from 'react';
 import { connect, SelectLang } from 'umi';
-import Avatar from './AvatarDropdown';
 import styles from './index.less';
 
 const ENVTagColor = {
@@ -20,7 +19,6 @@ const GlobalHeaderRight = (props) => {
 
   return (
     <div className={className}>
-      <Avatar menu />
       {REACT_APP_ENV && (
         <span>
           <Tag color={ENVTagColor[REACT_APP_ENV]}>{REACT_APP_ENV}</Tag>
