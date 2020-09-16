@@ -3,7 +3,7 @@
  * You can view component api by:
  * https://github.com/ant-design/ant-design-pro-layout
  */
-import ProLayout, { DefaultFooter, SettingDrawer } from '@ant-design/pro-layout';
+import ProLayout, { DefaultFooter } from '@ant-design/pro-layout';
 import React, { useEffect } from 'react';
 import { Link, useIntl, connect, history } from 'umi';
 import { GithubOutlined } from '@ant-design/icons';
@@ -21,7 +21,7 @@ const noMatch = (
     subTitle="متاسفیم، شما دسترسی به این صفحه را ندارید."
     extra={
       <Button type="primary">
-        <Link to="/user/login">وارد شوید.</Link>
+        <Link to="">وارد شوید.</Link>
       </Button>
     }
   />
@@ -144,16 +144,6 @@ const BasicLayout = (props) => {
           {children}
         </Authorized>
       </ProLayout>
-
-      <SettingDrawer
-        settings={settings}
-        onSettingChange={(config) =>
-          dispatch({
-            type: 'settings/changeSetting',
-            payload: config,
-          })
-        }
-      />
     </>
   );
 };

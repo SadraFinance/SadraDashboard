@@ -1,7 +1,7 @@
 const proSettings = {
   navTheme: 'dark',
   primaryColor: '#0067a5',
-  layout: 'side',
+  layout: 'top',
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: true,

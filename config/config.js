@@ -11,7 +11,7 @@ export default defineConfig({
   },
   locale: {
     // default zh-CN
-    default: 'fa-IR',
+    default: 'fa-FA',
     // default true, when it is true, will use `navigator.language` overwrite default
     antd: true,
     baseNavigator: true,
