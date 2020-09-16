@@ -1,3 +1,4 @@
-.ant-layout-sider .ant-layout-sider-dark .ant-pro-sider .ant-pro-sider-fixed .ant-pro-sider-layout-side{
+.ant-pro-sider-fixed{
     right: 0 !important;
+    left: auto;
 }
