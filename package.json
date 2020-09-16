@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "react-tradingview-widget": "^1.3.2",
     "save": "^2.4.0",
     "whatever": "^6000.0.0"
   },
