@@ -55,6 +55,7 @@
     "@ant-design/pro-table": "^2.4.0",
     "@antv/data-set": "^0.11.0",
     "@antv/l7-react": "^2.1.9",
+    "@babel/polyfill": "^7.11.5",
     "@types/lodash.debounce": "^4.0.6",
     "@types/lodash.isequal": "^4.5.5",
     "@types/numeral": "^0.0.28",
