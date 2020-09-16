@@ -3,6 +3,7 @@ import React from 'react';
 import { useIntl } from 'umi';
 import defaultSettings from '../config/defaultSettings';
 import './assets/font/font-face.css';
+import './src/layouts/FixRTL.css'
 
 const { pwa } = defaultSettings; // if pwa is true
 
