@@ -1,7 +1,6 @@
 const proSettings = {
   navTheme: 'dark',
-  // 拂晓蓝
-  primaryColor: '#1890ff',
+  primaryColor: '#0067a5',
   layout: 'side',
   contentWidth: 'Fluid',
   fixedHeader: false,
@@ -11,7 +10,7 @@ const proSettings = {
     locale: true,
   },
   title: 'تحلیلگر صدرا',
-  pwa: false,
+  pwa: true,
   iconfontUrl: '',
 };
 export default proSettings;

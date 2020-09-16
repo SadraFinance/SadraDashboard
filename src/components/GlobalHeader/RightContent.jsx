@@ -6,6 +6,7 @@ import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import styles from './index.less';
 import NoticeIconView from './NoticeIconView';
+
 const ENVTagColor = {
   dev: 'orange',
   test: 'green',
@@ -24,8 +25,8 @@ const GlobalHeaderRight = (props) => {
     <div className={className}>
       <HeaderSearch
         className={`${styles.action} ${styles.search}`}
-        placeholder="站内搜索"
-        defaultValue="umi ui"
+        placeholder="جستجو..."
+        defaultValue=""
         options={[
           {
             label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>,

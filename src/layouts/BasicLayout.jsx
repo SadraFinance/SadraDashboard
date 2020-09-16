@@ -16,11 +16,11 @@ import logo from '../assets/logo.svg';
 const noMatch = (
   <Result
     status={403}
-    title="403"
-    subTitle="Sorry, you are not authorized to access this page."
+    title="۴۰۳"
+    subTitle="متاسفیم، شما دسترسی به این صفحه را ندارید."
     extra={
       <Button type="primary">
-        <Link to="/user/login">Go Login</Link>
+        <Link to="/user/login">وارد شوید.</Link>
       </Button>
     }
   />
@@ -44,20 +44,20 @@ const defaultFooterDom = (
     links={[
       {
         key: 'Ant Design Pro',
-        title: 'Ant Design Pro',
-        href: 'https://pro.ant.design',
+        title: 'Sadra Lab',
+        href: 'https://Lab.sadrafinance.ir',
         blankTarget: true,
       },
       {
         key: 'github',
         title: <GithubOutlined />,
-        href: 'https://github.com/ant-design/ant-design-pro',
+        href: 'https://github.com/sadrafinance',
         blankTarget: true,
       },
       {
-        key: 'Ant Design',
-        title: 'Ant Design',
-        href: 'https://ant.design',
+        key: 'Sadra Blog',
+        title: 'Sadra Blog',
+        href: 'https://blog.sadrafinance.ir',
         blankTarget: true,
       },
     ]}
@@ -100,6 +100,7 @@ const BasicLayout = (props) => {
   const authorized = getAuthorityFromRouter(props.route.routes, location.pathname || '/') || {
     authority: undefined,
   };
+
   const { formatMessage } = useIntl();
   return (
     <>

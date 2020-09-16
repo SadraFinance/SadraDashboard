@@ -4,9 +4,9 @@ import { history } from 'umi';
 
 const NoFoundPage = () => (
   <Result
-    status="404"
-    title="404"
-    subTitle="Sorry, the page you visited does not exist."
+    status="۴۰۴"
+    title="۴۰۴"
+    subTitle="متاسفانه صفحه مورد نظر شما موجود نیست."
     extra={
       <Button type="primary" onClick={() => history.push('/')}>
         Back Home
