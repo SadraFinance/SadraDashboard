@@ -1,14 +1,13 @@
 import React from "react";
 import { Layout, Menu, Breadcrumb } from "antd";
 import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
+  LineChartOutlined,
+  FundViewOutlined,
+  FundProjectionScreenOutlined,
+  RadarChartOutlined,
+  QuestionCircleOutlined,
 } from "@ant-design/icons";
 import logo from "../logo.svg";
-import TradingView from "./TradingView.jsx";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -39,24 +38,26 @@ class BasicLayout extends React.Component {
             alt="logo"
           />
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-            <Menu.Item key="1" icon={<PieChartOutlined />}>
-              تحلیل نمودار
+            <Menu.Item key="1" icon={<FundViewOutlined />}>
+              نمای اصلی
             </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
-              آزمایشگاه ماشین تردینگ
+            <Menu.Item key="2" icon={<FundProjectionScreenOutlined />}>
+              پورتفو
+            </Menu.Item>
+            <Menu.Item key="2" icon={<RadarChartOutlined />}>
+              استراتژی‌ها
+            </Menu.Item>
+            <Menu.Item key="2" icon={<LineChartOutlined />}>
+              بک‌ تست
+            </Menu.Item>
+            <Menu.Item key="3" icon={<QuestionCircleOutlined />}>
+              راهنمای استراتژی
             </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }} />
-          <Content>
-            <div
-              className="site-layout-background"
-              style={{ padding: 4, minHeight: 1000 }}
-            >
-              <TradingView />
-            </div>
-          </Content>
+          <Content></Content>
           <Footer style={{ textAlign: "center" }}>
             Ant Design ©2018 Created by Ant UED
           </Footer>
