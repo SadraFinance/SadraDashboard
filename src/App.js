@@ -1,5 +1,6 @@
 import React from "react";
 import { ConfigProvider } from "antd";
+//import Loading from "./components/loading.jsx"
 import "./assets/style.css";
 import "./App.css";
 import BasicLayout from "./layouts/BasicLayout";

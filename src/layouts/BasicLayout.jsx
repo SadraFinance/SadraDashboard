@@ -6,7 +6,9 @@ import {
   FundProjectionScreenOutlined,
   RadarChartOutlined,
   QuestionCircleOutlined,
+  ExperimentOutlined,
 } from "@ant-design/icons";
+import HeaderContent from "../components/headerContent";
 import logo from "../assets/logo.svg";
 
 const { Title } = Typography;
@@ -63,9 +65,10 @@ class BasicLayout extends React.Component {
           <Header className="site-layout-background" style={{ padding: 0 }}>
             <PageHeader
               className="site-page-header"
-              onBack={() => null}
+              onBack={() => window.history.back()}
               title="نمای اصلی"
               subTitle="تحلیلگر صدرا"
+              extra={[<HeaderContent />]}
             />
           </Header>
           <Content></Content>
