@@ -19,3 +19,16 @@
 .site-layout .site-layout-background {
   background: #fff;
 }
+
+.logo {
+  display: inline-flex;
+  margin: 1em;
+  align-items: center;
+}
+.logo > img {
+  width: 3rem;
+  margin-left: 1em;
+}
+.logo > Title {
+  margin-top: 1em;
+}
