@@ -64,8 +64,8 @@ class BasicLayout extends React.Component {
             <PageHeader
               className="site-page-header"
               onBack={() => null}
-              title="Title"
-              subTitle="This is a subtitle"
+              title="نمای اصلی"
+              subTitle="تحلیلگر صدرا"
             />
           </Header>
           <Content></Content>
