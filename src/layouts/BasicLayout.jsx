@@ -10,15 +10,70 @@ import {
 import HeaderContent from "../components/headerContent";
 import logo from "../assets/logo.svg";
 import MainView from "../pages/MainView";
+import PortfoView from "../pages/PortfoView";
+import StrategyView from "../pages/StrategyView";
+import StrategyHelpView from "../pages/StrategyHelpView";
+import BackTestView from "../pages/BackTestView";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 
 const { Title } = Typography;
 
 const { Header, Content, Footer, Sider } = Layout;
+const routes = [
+  {
+    path: "/",
+    exact: false,
+    main: () => (
+      <div>
+        <MainView />
+      </div>
+    ),
+  },
+  {
+    path: "/portfo",
+    main: () => (
+      <div>
+        <PortfoView />
+      </div>
+    ),
+  },
+  {
+    path: "/strategy",
+    main: () => (
+      <div>
+        <StrategyView />
+      </div>
+    ),
+  },
+  {
+    path: "/back-test",
+    main: () => (
+      <div>
+        <BackTestView />
+      </div>
+    ),
+  },
+  {
+    path: "/strategy-help",
+    main: () => (
+      <div>
+        <StrategyHelpView />
+      </div>
+    ),
+  },
+];
 
 class BasicLayout extends React.Component {
   state = {
     collapsed: false,
     showLogoTitle: true,
+    index: 1,
+    default: 1,
   };
 
   onCollapse = (collapsed) => {
@@ -26,7 +81,6 @@ class BasicLayout extends React.Component {
     this.setState({ collapsed });
     this.showLogoTitle = !this.showLogoTitle;
   };
-
   render() {
     return (
       <Layout style={{ minHeight: "100vh" }}>
@@ -43,21 +97,45 @@ class BasicLayout extends React.Component {
               </Title>
             )}
           </div>
-          <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-            <Menu.Item key="1" icon={<FundViewOutlined />}>
-              نمای اصلی
+          <Menu
+            theme="dark"
+            defaultSelectedKeys={[this.state.index + ""]}
+            mode="inline"
+          >
+            <Menu.Item
+              key="1"
+              icon={<FundViewOutlined />}
+              onClick={() => this.setState({ index: 0 })}
+            >
+              <Link to="/"> نمای اصلی</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<FundProjectionScreenOutlined />}>
-              پورتفو
+            <Menu.Item
+              key="2"
+              icon={<FundProjectionScreenOutlined />}
+              onClick={() => this.setState({ index: 1 })}
+            >
+              <Link to="/portfo"> پورتفو</Link> {console.log(this.state.index)}
             </Menu.Item>
-            <Menu.Item key="3" icon={<RadarChartOutlined />}>
-              استراتژی‌ها
+            <Menu.Item
+              key="3"
+              icon={<RadarChartOutlined />}
+              onClick={() => this.setState({ index: 2 })}
+            >
+              <Link to="/strategy">استراتژی‌ها</Link>
             </Menu.Item>
-            <Menu.Item key="4" icon={<LineChartOutlined />}>
-              بک‌ تست
+            <Menu.Item
+              key="4"
+              icon={<LineChartOutlined />}
+              onClick={() => this.setState({ index: 3 })}
+            >
+              <Link to="/back-test"> بک‌ تست</Link>
             </Menu.Item>
-            <Menu.Item key="5" icon={<QuestionCircleOutlined />}>
-              راهنمای استراتژی
+            <Menu.Item
+              key="5"
+              icon={<QuestionCircleOutlined />}
+              onClick={() => this.setState({ index: 4 })}
+            >
+              <Link to="/strategy-help"> راهنمای استراتژی</Link>
             </Menu.Item>
           </Menu>
         </Sider>
@@ -71,13 +149,24 @@ class BasicLayout extends React.Component {
               extra={[<HeaderContent />]}
             />
           </Header>
-          <Content
-            style={{
-              padding: 27,
-            }}
-          >
-            <MainView />
-          </Content>
+          <div className="App-body">
+            <Router>
+              <div>
+                <div>
+                  <Content style={{ padding: 27 }}>
+                    {
+                      <Route
+                        key={this.state.index}
+                        path={routes[this.state.index].path}
+                        exact={routes[this.state.index].exact}
+                        component={routes[this.state.index].main}
+                      />
+                    }
+                  </Content>
+                </div>
+              </div>
+            </Router>
+          </div>
           <Footer style={{ textAlign: "center" }}>
             Sadra Analysis Dashboard ©2021 Created by{" "}
             <a
