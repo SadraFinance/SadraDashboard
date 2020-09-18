@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Row, Col } from "antd";
 import * as TradinView from "../components/tradingView";
-import GridLayout from "react-grid-layout";
 
 export default function MainView() {
   return (
@@ -17,10 +16,6 @@ export default function MainView() {
             <TradinView.Forex />
           </Card>
         </Col>
-      </Row>
-      <Row gutter={[16, 16]}>
-        <Col span={8}></Col>
-        <Col span={16}></Col>
       </Row>
     </>
   );
