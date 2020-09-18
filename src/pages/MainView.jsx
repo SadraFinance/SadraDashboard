@@ -17,10 +17,6 @@ export default function MainView() {
           </Card>
         </Col>
       </Row>
-      <Row gutter={[16, 16]}>
-        <Col span={8}></Col>
-        <Col span={16}></Col>
-      </Row>
     </>
   );
 }
