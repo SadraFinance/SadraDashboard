@@ -14,59 +14,11 @@ import PortfoView from "../pages/PortfoView";
 import StrategyView from "../pages/StrategyView";
 import StrategyHelpView from "../pages/StrategyHelpView";
 import BackTestView from "../pages/BackTestView";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const { Title } = Typography;
 
 const { Header, Content, Footer, Sider } = Layout;
-const routes = [
-  {
-    path: "/",
-    exact: false,
-    main: () => (
-      <div>
-        <MainView />
-      </div>
-    ),
-  },
-  {
-    path: "/portfo",
-    main: () => (
-      <div>
-        <PortfoView />
-      </div>
-    ),
-  },
-  {
-    path: "/strategy",
-    main: () => (
-      <div>
-        <StrategyView />
-      </div>
-    ),
-  },
-  {
-    path: "/back-test",
-    main: () => (
-      <div>
-        <BackTestView />
-      </div>
-    ),
-  },
-  {
-    path: "/strategy-help",
-    main: () => (
-      <div>
-        <StrategyHelpView />
-      </div>
-    ),
-  },
-];
 
 class BasicLayout extends React.Component {
   state = {
