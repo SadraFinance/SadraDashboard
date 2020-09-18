@@ -6,10 +6,10 @@ import {
   FundProjectionScreenOutlined,
   RadarChartOutlined,
   QuestionCircleOutlined,
-  ExperimentOutlined,
 } from "@ant-design/icons";
 import HeaderContent from "../components/headerContent";
 import logo from "../assets/logo.svg";
+import MainView from "../pages/MainView";
 
 const { Title } = Typography;
 
@@ -71,7 +71,13 @@ class BasicLayout extends React.Component {
               extra={[<HeaderContent />]}
             />
           </Header>
-          <Content></Content>
+          <Content
+            style={{
+              padding: 27,
+            }}
+          >
+            <MainView />
+          </Content>
           <Footer style={{ textAlign: "center" }}>
             Sadra Analysis Dashboard ©2021 Created by{" "}
             <a
