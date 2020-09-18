@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Row, Col } from "antd";
 import * as TradinView from "../components/tradingView";
+import GridLayout from "react-grid-layout";
 
 export default function MainView() {
   return (
