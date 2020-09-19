@@ -1,0 +1,111 @@
+[
+  {
+    "portfo": [
+      {
+        "key": "1",
+        "name": "سیگنال کم ریسک",
+        "capitalValue": 32000000,
+        "profitPerDay": 200000,
+        "profit": 1600000,
+        "profitByPercent": "5%"
+      },
+      {
+        "key": "2",
+        "name": "پرنده آزاد",
+        "capitalValue": 28000000,
+        "profitPerDay": 400000,
+        "profit": 2800000,
+        "profitByPercent": "10%"
+      },
+      {
+        "key": "3",
+        "name": "ویرانگر",
+        "capitalValue": 56000000,
+        "profitPerDay": 240000,
+        "profit": 11200000,
+        "profitByPercent": "20%"
+      }
+    ],
+    "stock": [
+      {
+        "key": "1",
+        "name": "سخاش",
+        "capitalValue": 32000000,
+        "profit": 1600000,
+        "profitByPercent": "5%"
+      },
+      {
+        "key": "2",
+        "name": "کبافق",
+        "capitalValue": 28000000,
+        "profit": 2800000,
+        "profitByPercent": "10%"
+      },
+      {
+        "key": "3",
+        "name": "صبا",
+        "capitalValue": 56000000,
+        "profit": 11200000,
+        "profitByPercent": "20%"
+      }
+    ],
+    "buy-today": [
+      {
+        "key": "1",
+        "name": "سخاش",
+        "type": "خرید",
+        "capitalValue": 2000000
+      },
+      {
+        "key": "2",
+        "name": "کبافق",
+        "type": "فروش",
+        "capitalValue": 2000000
+      },
+      {
+        "key": "3",
+        "type": "خرید",
+        "name": "صبا",
+        "capitalValue": 1500000
+      }
+    ],
+    "history": [
+      {
+        "key": "1",
+        "name": "سخاش",
+        "type": "خرید",
+        "capitalValue": 2000000
+      },
+      {
+        "key": "2",
+        "name": "کبافق",
+        "type": "خرید",
+        "capitalValue": 2000000
+      },
+      {
+        "key": "3",
+        "name": "صبا",
+        "type": "خرید",
+        "capitalValue": 1500000
+      },
+      {
+        "key": "4",
+        "name": "صبا",
+        "type": "خرید",
+        "capitalValue": 1500000
+      },
+      {
+        "key": "5",
+        "name": "صبا",
+        "type": "خرید",
+        "capitalValue": 1500000
+      },
+      {
+        "key": "6",
+        "name": "صبا",
+        "type": "خرید",
+        "capitalValue": 1500000
+      }
+    ]
+  }
+]

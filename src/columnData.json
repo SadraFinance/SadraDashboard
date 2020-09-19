@@ -1,0 +1,58 @@
+[
+  {
+    "portfo": [
+      {
+        "title": "نام استراتژی",
+        "dataIndex": "name"
+      },
+      {
+        "title": "میزان سرمایه",
+        "dataIndex": "capitalValue"
+      },
+      {
+        "title": "سود روزانه",
+        "dataIndex": "profitPerDay"
+      },
+      {
+        "title": "سود کلی",
+        "dataIndex": "profit"
+      },
+      {
+        "title": "درصد سود کلی",
+        "dataIndex": "profitByPercent"
+      }
+    ],
+    "stock": [
+      {
+        "title": "نام سهم",
+        "dataIndex": "name"
+      },
+      {
+        "title": "میزان سرمایه سهم",
+        "dataIndex": "capitalValue"
+      },
+      {
+        "title": "سود کلی",
+        "dataIndex": "profit"
+      },
+      {
+        "title": "درصد سود کلی",
+        "dataIndex": "profitByPercent"
+      }
+    ],
+    "buy-today": [
+      {
+        "title": "نام سهم",
+        "dataIndex": "name"
+      },
+      {
+        "title": "میزان سرمایه ",
+        "dataIndex": "capitalValue"
+      },
+      {
+        "title": "نوع عملیات",
+        "dataIndex": "type"
+      }
+    ]
+  }
+]

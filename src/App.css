@@ -9,3 +9,11 @@
 .site-layout .site-layout-background {
   background: #fff;
 }
+
+.card-size {
+  height: 105vh;
+}
+
+.card-size-2 {
+  height: 80vh;
+}

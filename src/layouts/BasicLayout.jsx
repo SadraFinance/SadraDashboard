@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Typography, PageHeader } from "antd";
+import { Layout, Menu, Typography, PageHeader, Image } from "antd";
 import {
   LineChartOutlined,
   FundViewOutlined,
@@ -29,6 +29,7 @@ class BasicLayout extends React.Component {
     showLogoTitle: true,
     index: 1,
     default: 1,
+    flag: false,
   };
   componentWillUpdate() {}
 
@@ -47,7 +48,9 @@ class BasicLayout extends React.Component {
             onCollapse={this.onCollapse}
           >
             <div className="logo">
-              <img alt="Sadra" src={logo} />
+              <a href="https://sadrafinance.ir/">
+                <Image alt="Sadra" src={logo} preview={false} width={"50px"} />
+              </a>
               {this.showLogoTitle ? null : (
                 <Title style={{ color: "white", marginTop: "1rem" }} level={4}>
                   تحلیلگر صدرا
@@ -73,7 +76,7 @@ class BasicLayout extends React.Component {
                 onClick={() => this.setState({ index: 1 })}
               >
                 <Link to="/portfo"> پورتفو</Link>{" "}
-                {console.log(this.state.index)}
+                {!this.state.flag && localStorage.setItem("selectedRow", 1)}
               </Menu.Item>
               <Menu.Item
                 key="3"
@@ -97,7 +100,7 @@ class BasicLayout extends React.Component {
                 <Link to="/strategy-help"> راهنمای استراتژی</Link>
               </Menu.Item>
               <Menu.Item
-                key="5"
+                key="6"
                 icon={<AreaChartOutlined />}
                 onClick={() => this.setState({ index: 5 })}
               >
