@@ -15,7 +15,7 @@ import PortfoView from "../pages/PortfoView";
 import StrategyView from "../pages/StrategyView";
 import StrategyHelpView from "../pages/StrategyHelpView";
 import BackTestView from "../pages/BackTestView";
-import StrategyAssistsant from "../pages/SrtategyAssistant";
+import AnalysisAssistsant from "../pages/AnalysisAssistant";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -123,6 +123,10 @@ class BasicLayout extends React.Component {
                     <Route path={"/portfo"} component={PortfoView} />
                     <Route path={"/strategy"} component={StrategyView} />
                     <Route path={"/back-test"} component={BackTestView} />
+                    <Route
+                      path={"/analysis-assitant"}
+                      component={AnalysisAssistsant}
+                    />
                     <Route
                       path={"/strategy-help"}
                       component={StrategyHelpView}
