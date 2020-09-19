@@ -6,12 +6,12 @@ export default function MainView() {
   return (
     <>
       <Row gutter={[16, 16]}>
-        <Col span={8}>
+        <Col xs={24} sm={24} md={24} lg={8} xl={8}>
           <Card hoverable title="وضعیت کلی بازار">
             <TradinView.Overall />
           </Card>
         </Col>
-        <Col span={16}>
+        <Col xs={24} sm={24} md={24} lg={16} xl={16}>
           <Card hoverable title="نمودار مقایسه‌ای ارز">
             <TradinView.Forex />
           </Card>

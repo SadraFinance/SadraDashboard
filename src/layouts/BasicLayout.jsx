@@ -6,6 +6,7 @@ import {
   FundProjectionScreenOutlined,
   RadarChartOutlined,
   QuestionCircleOutlined,
+  AreaChartOutlined,
 } from "@ant-design/icons";
 import HeaderContent from "../components/headerContent";
 import logo from "../assets/logo.svg";
@@ -14,6 +15,8 @@ import PortfoView from "../pages/PortfoView";
 import StrategyView from "../pages/StrategyView";
 import StrategyHelpView from "../pages/StrategyHelpView";
 import BackTestView from "../pages/BackTestView";
+import StrategyAssistsant from "../pages/SrtategyAssistant";
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const { Title } = Typography;
@@ -92,6 +95,13 @@ class BasicLayout extends React.Component {
                 onClick={() => this.setState({ index: 4 })}
               >
                 <Link to="/strategy-help"> راهنمای استراتژی</Link>
+              </Menu.Item>
+              <Menu.Item
+                key="5"
+                icon={<AreaChartOutlined />}
+                onClick={() => this.setState({ index: 5 })}
+              >
+                <Link to="/analysis-assistsnt">دستیار تحلیلی</Link>
               </Menu.Item>
             </Menu>
           </Sider>
