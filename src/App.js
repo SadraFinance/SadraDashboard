@@ -6,7 +6,7 @@ import "./assets/style.css";
 import "./App.css";
 import BasicLayout from "./layouts/BasicLayout";
 import "./assets/font/font-face.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   return (
