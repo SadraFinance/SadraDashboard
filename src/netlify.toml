@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "https://app.sadrafinance.ir"
   force = true
   status = 200
